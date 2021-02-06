@@ -6,22 +6,15 @@
         <vuetify-logo />
       </div>
       <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
+        <v-card-title class="headline"> Welcome to the Vuetify + Nuxt.js template</v-card-title>
         <v-card-text>
           <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
+            Vuetify is a progressive Material Design component framework for Vue.js. It was designed
+            to empower developers to create amazing applications.
           </p>
           <p>
             For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://vuetifyjs.com" target="_blank" rel="noopener noreferrer">
               documentation </a
             >.
           </p>
@@ -48,46 +41,39 @@
             >.
           </p>
           <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
+            Thank you for developing with Vuetify and I look forward to bringing more exciting
+            features in the future.
           </p>
           <div class="text-xs-right">
             <em><small>&mdash; John Leider</small></em>
           </div>
           <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
             Nuxt Documentation
           </a>
           <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer">
             Nuxt GitHub
           </a>
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
+          <v-btn color="primary" nuxt to="/inspire">Continue</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
   </v-row>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+<script lang="ts">
+import Vue from 'vue';
+import Logo from '~/components/Logo.vue';
+import VuetifyLogo from '~/components/VuetifyLogo.vue';
 
-export default {
+export default Vue.extend({
   components: {
     Logo,
     VuetifyLogo,
   },
-}
+});
 </script>
